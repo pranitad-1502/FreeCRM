@@ -41,7 +41,7 @@ public class TestBase_Cogmento
 		{
 			e.printStackTrace();
 		}
-		htmlreport = new ExtentHtmlReporter(prop.getProperty("reportslocation")+"\\google.html");
+		 htmlreport = new ExtentHtmlReporter(prop.getProperty("reportslocation")+"\\cogmento.html");
 		 ext = new ExtentReports();
 		 ext.attachReporter(htmlreport);
 		 //ext.setSystemInfo("Host Name", "Yogita-sysname");
@@ -64,7 +64,7 @@ public class TestBase_Cogmento
 			driver=new ChromeDriver();
 		}
 		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(20,TimeUnit.SECONDS);
+		//driver.manage().timeouts().pageLoadTimeout(20,TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		
 	}
