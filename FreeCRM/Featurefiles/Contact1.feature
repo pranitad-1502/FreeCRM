@@ -1,4 +1,4 @@
-#Author: your.email@your.domain.com
+#Author: your.email1@your.domain.com
 
 @contact1tag
 Feature: Contacts FreeCRM Cogmento
@@ -11,9 +11,9 @@ Feature: Contacts FreeCRM Cogmento
 	
 	@ya2
   Scenario: Verify New Option
-		Given User is on Deals page	
-		When User clicks on New
-		Then Create New Page will be displyed
+		Given User is on contact page	
+		When User clicks on new
+		Then Create New contact Page will be displyed
     
    @ya3
    Scenario: Validate Valid Email
@@ -29,6 +29,6 @@ Feature: Contacts FreeCRM Cogmento
    
    @ya5
    Scenario: Validate status field
-   	Given	User is on status field
-   	When	User select one field
-   	Then	One field is selected
+   	Given User is on status field
+   	When User select one field
+   	Then One field is selected

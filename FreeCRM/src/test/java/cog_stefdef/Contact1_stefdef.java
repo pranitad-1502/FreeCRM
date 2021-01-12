@@ -31,21 +31,21 @@ public class Contact1_stefdef
     	c1.validate_title();
     }
     
-   @Given("^User is on Deals page$")
-    public void user_is_on_deals_page() throws Throwable 
+   @Given("^User is on contact page$")
+    public void user_is_on_contact_page() throws Throwable 
     {
-	   System.out.println("User is on Deal Page");
+	   System.out.println("User is on contact Page");
     }
 
-    @When("^User clicks on New$")
+    @When("^User clicks on new$")
     public void user_clicks_on_new() throws Throwable 
     {
     	System.out.println("User clicks on New to create new contact");
-    	c1.click_new();
+    	c1.clickNew();
     }
 
-    @Then("^Create New Page will be displyed$")
-    public void create_new_page_will_be_displyed() throws Throwable 
+    @Then("^Create New contact Page will be displyed$")
+    public void create_new_contact_page_will_be_displyed() throws Throwable 
     {
     	System.out.println("User validate New Page");
     	c1.newPage();

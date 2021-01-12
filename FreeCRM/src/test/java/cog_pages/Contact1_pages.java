@@ -69,7 +69,8 @@ public class Contact1_pages extends TestBase_Cogmento
 	
 	public void clickContact() throws Exception
 	{	
-		Thread.sleep(5000);
+		PageFactory.initElements(driver,this);
+		Thread.sleep(1000);
 		contact.click();
 		Thread.sleep(3000);
 		takescreenshot("HomePage.png");
@@ -94,7 +95,7 @@ public class Contact1_pages extends TestBase_Cogmento
 		}
 	}
 	
-	public void click_new()
+	public void clickNew()
 	{
 		newbutton.click();
 	}

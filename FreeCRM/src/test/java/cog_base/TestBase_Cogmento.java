@@ -41,6 +41,7 @@ public class TestBase_Cogmento
 		{
 			e.printStackTrace();
 		}
+
 		 htmlreport = new ExtentHtmlReporter(prop.getProperty("reportslocation")+"\\cogmento.html");
 		 ext = new ExtentReports();
 		 ext.attachReporter(htmlreport);
