@@ -40,8 +40,12 @@ public class TestBase_Cogmento
 		catch(Exception e)
 		{
 			e.printStackTrace();
+
 		}
+		
+		
 		htmlreport = new ExtentHtmlReporter(prop.getProperty("reportslocation")+"\\cogmento.html");
+
 		 ext = new ExtentReports();
 		 ext.attachReporter(htmlreport);
 		 //ext.setSystemInfo("Host Name", "Yogita-sysname");

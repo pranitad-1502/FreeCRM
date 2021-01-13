@@ -17,12 +17,12 @@ Feature:  Tasks FreeCRM Cogmento
 	@vk3  
 	Scenario: Validate alert message for titlefield
 	Given User is on Tasks page
-	When User clicks on Save with empty titlefield
-	Then Alert message should be displayed above Title
+	When User clicks on Save with empty titlefield in Tasks
+	Then Alert message should be displayed above Title in Tasks
 	
   @vk4   
   Scenario Outline: Create a new Task only with title
-	When User Enter valid <title> and click save
+	When User Enter valid <title> and click save in Tasks
 	Then New Tasks should be displayed on deals home page
 	Examples:
 	|title|
@@ -35,8 +35,8 @@ Feature:  Tasks FreeCRM Cogmento
 	
 	@vk6   
 	Scenario: Validate Toggle Button for Access
-	When User clicks on toggle button
-	Then Toggle button should change the state
+	When User perform on toggle button in Tasks
+	
 	
 	
 	

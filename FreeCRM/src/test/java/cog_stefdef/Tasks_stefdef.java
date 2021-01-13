@@ -44,20 +44,20 @@ public class Tasks_stefdef
          tp.new_taskspage();
     }
     
-    @When("^User clicks on Save with empty titlefield$")
-    public void user_clicks_on_save_with_empty_titlefield() throws Throwable
+    @When("^User clicks on Save with empty titlefield in Tasks$")
+    public void user_clicks_on_save_with_empty_titlefield_in_tasks() throws Throwable
     {
         tp.title_empty_and_save();
     }
 
-    @Then("^Alert message should be displayed above Title$")
-    public void alert_message_should_be_displayed_above_title() throws Throwable
+    @Then("^Alert message should be displayed above Title in Tasks$")
+    public void alert_message_should_be_displayed_above_title_in_tasks() throws Throwable
     {
         tp.alerterrormsg();
     }
     
-    @When("^User Enter valid (.+) and click save$")
-    public void user_enter_valid_and_click_save(String title) throws Throwable 
+    @When("^User Enter valid (.+) and click save in Tasks$")
+    public void user_enter_valid_and_click_save_in_tasks(String title) throws Throwable 
     {
         tp.valid_title(title);
     }
@@ -82,19 +82,15 @@ public class Tasks_stefdef
     }
     
        
-    @When("^User clicks on toggle button$")
-    public void user_clicks_on_toggle_button() throws Throwable 
+    @When("^User perform on toggle button in Tasks$")
+    public void user_perform_on_toggle_button_in_tasks() throws Throwable 
     {
         tp.click_new();
         System.out.println("clicked on new"); 
         tp.setAccess();
     }
 
-    @Then("^Toggle button should change the state$")
-    public void toggle_button_should_change_the_state() throws Throwable
-    {
-    	System.out.println("Toggle Button is On");
-    }
+   
  }
 
     
