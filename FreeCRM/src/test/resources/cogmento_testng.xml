@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="FreeCrmSuite">
+	<test name="testCRM">
+	<classes>
+	<class name ="cog_base.TestBase_Cogmento"/>
+	<class name="cog_testsuites.Login_testrunner"/>
+	</classes>
+	</test>
+</suite>
