@@ -1,8 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="FreeCrmSuite">
-	<test name="testCRM">
-		<classes>
-		<class name="cog_base.TestBase_Cogmento"/>
-		<class name="cog_testsuites.Contacts2_testrunner"/>
-		</classes>
-	</test>	
+    <test name="testCRM">
+        <classes>
+        <class name="cog_base.TestBase_Cogmento"/>
+        <class name="cog_testsuites.Deal_testrunner"/>
+        <class name="cog_testsuites.Contact1_Runner"/>
+        <class name="cog_testsuites.Contacts2_testrunner"/>
+        </classes>
+    </test>   
 </suite>
