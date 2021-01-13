@@ -11,8 +11,8 @@ public class Calendar_stepdef
 {
 	Calendar_pages cp = new Calendar_pages();
 	//tag1
-	@Given("^User is on Cogmento Home Page$")
-    public void user_is_on_cogmento_home_page() throws Throwable 
+	@Given("^User is on CogmentoHomePage$")
+    public void user_is_on_cogmentohomepage() throws Throwable 
 	{
 		//cp.openurl();
 		//cp.login();
@@ -52,8 +52,8 @@ public class Calendar_stepdef
     }
     
     //tag3
-    @When("^User clicks on New$")
-    public void user_clicks_on_new() throws Throwable 
+    @When("^User clicks on New event$")
+    public void user_clicks_on_new_event() throws Throwable 
     {
     	cp.click_new();
     }

@@ -4,7 +4,7 @@ Feature: To verify Calendar page of FreeCRM Cogmento
 
   @tag1
 	Scenario: Verify Calendar page is displayed or not
-	Given User is on Cogmento Home Page
+	Given User is on CogmentoHomePage
 	When User clicks on Calendar present on side bar
 	Then Calendar page is displayed
 	
@@ -16,7 +16,7 @@ Feature: To verify Calendar page of FreeCRM Cogmento
 
 	@tag3
 	Scenario: Verify New Option
-	When User clicks on New
+	When User clicks on New event
 	Then Create New Event Page will be displayed
 
 	@tag4

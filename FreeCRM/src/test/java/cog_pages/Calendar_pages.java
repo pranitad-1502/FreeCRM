@@ -117,7 +117,7 @@ public class Calendar_pages extends TestBase_Cogmento
 	{
 		c.click();
 		Thread.sleep(2000);
-		String statusXpath = ".//span[contains(text(),'" + "Ashwini Jadhav" + "')]";
+		String statusXpath = ".//span[contains(text(),'" + "Panita Dorle" + "')]";
 		c.findElement(By.xpath(statusXpath)).click();
 		
 		
