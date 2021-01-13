@@ -27,7 +27,7 @@ Feature: To verify Calendar page of FreeCRM Cogmento
  
 	@tag5
 	Scenario Outline: Create a new Event only with required fields
-	When User Enter valid <title> and required details and click save
+	When User Enter valid <title> and required details and click savecalendar
 	Then New Event suumary should be displayed
 	And New Event should be displayed on Calendar page
 	

@@ -85,8 +85,8 @@ public class Calendar_stepdef
     }
   
     //tag5
-    @When("^User Enter valid (.+) and required details and click save$")
-    public void user_enter_valid_and_required_details_and_click_save(String title) throws Throwable 
+    @When("^User Enter valid (.+) and required details and click savecalendar$")
+    public void user_enter_valid_and_required_details_and_click_savecalendar(String title) throws Throwable 
     {
     	cp.valid_title(title);
     	cp.valid_cal();

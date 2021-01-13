@@ -42,6 +42,7 @@ public class Calendar_pages extends TestBase_Cogmento
 	}
 	public void openCal() throws Exception
 	{	
+		PageFactory.initElements(driver, this);
 		driver.findElement(By.xpath("//span[text()='Calendar']")).click();
 		Thread.sleep(2000);
 	}
@@ -99,7 +100,8 @@ public class Calendar_pages extends TestBase_Cogmento
 
 	public void alerterrormsg() throws Exception
 	{
-		s.sendKeys(Keys.ENTER);
+		//s.click();
+		driver.findElement(By.xpath("//div[@id='dashboard-toolbar']/div[2]/div/button[2]")).click(); //Click on save button
 		Thread.sleep(2000);
 		//String str = driver.findElement(By.className("inline-error-msg")).getText();
 		System.out.println("Required");
@@ -117,7 +119,7 @@ public class Calendar_pages extends TestBase_Cogmento
 	{
 		c.click();
 		Thread.sleep(2000);
-		String statusXpath = ".//span[contains(text(),'" + "Panita Dorle" + "')]";
+		String statusXpath = ".//span[contains(text(),'" + "Pranita Dorle" + "')]";
 		c.findElement(By.xpath(statusXpath)).click();
 		
 		
