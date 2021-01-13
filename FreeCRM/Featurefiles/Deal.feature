@@ -1,4 +1,4 @@
-#Author: your.email@your.domain.com
+#Author: Pranita Dorle
 
 @dealtag
 Feature: Deals FreeCRM Cogmento

@@ -1,3 +1,12 @@
+/* Author: Pranita Dorle
+ * Date: 09 Jan 2021
+ * Description: Validate Deals and new button
+ * 				Validate fields in create new deal
+ * 				Blank Title and Save
+ * 				Valid title and Save
+ * 				Toggle Button,drop-down
+ * 				Delete the record
+ * 				Validate Save and cancel button*/
 package cog_pages;
 
 import java.util.concurrent.TimeUnit;
@@ -62,6 +71,7 @@ public class Deal_pages  extends TestBase_Cogmento
 	
 	public void LeftBar()
 	{
+		PageFactory.initElements(driver, this);
 		driver.findElement(By.xpath("//span[text()='Deals']")).click();   //Click on Deals on leftside bar                         
 	}
 	
