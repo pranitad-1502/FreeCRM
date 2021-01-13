@@ -33,53 +33,14 @@ public class Contacts2_pages extends TestBase_Cogmento {
 	static @FindBy(xpath="//div[@class='two fields'][12]/div/div/div") WebElement do_not_email;
 	
 	
-	public void openurl() throws InterruptedException
-	{
-		//initialize();
-		PageFactory.initElements(driver, this);
-		driver.get(prop.getProperty("url"));
-		Thread.sleep(5000);
-	}
-
-	public void login() throws Exception
-	{
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		login.click();
-		Thread.sleep(5000);
-		email.sendKeys("aishwaryaj2998@gmail.com");
-		pass.sendKeys("Aishwarya#29");
-		login1.click();
-		
-		Thread.sleep(5000);
-		String t=driver.getPageSource();
-		Thread.sleep(2000);
-		if(t.contains("Aishwarya Jadhav"))
-		{
-		testlog=ext.createTest("Cogmento-Homepage");
-		testlog.log(Status.PASS,"Cogmento home page is displayed to search");
-		takescreenshot("cogmentohomepage.png");
-		}
-		else
-		{
-		testlog=ext.createTest("Cogmento-Homepage");
-		testlog.log(Status.FAIL,"Cogmento home page is not displayed to search");
-		takescreenshot("cogmentohomepage.png");
-		}
-		Thread.sleep(3000);
-
-		
-	}
-	public void LeftBar() throws Exception
-	{
-		driver.findElement(By.xpath("//span[text()='Contacts']")).click(); 
-		Thread.sleep(3000);
-	}
+	
 	public void click_new_contact() throws InterruptedException
 	{   
 		PageFactory.initElements(driver, this);
 		newbutton.click();
 		driver.manage().timeouts().pageLoadTimeout(20,TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+	
 	}
 	
 	public void validate_new_contactspage() throws Exception
