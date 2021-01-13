@@ -87,5 +87,6 @@ public class Login_stefdef {
 		    public void user_should_see_the_cogmento_crm_homepage() throws Throwable {
 		    	l.validate_title();
 		    	 System.out.println("Cogmento crm");
+		    	 Thread.sleep(3000);
 		    }
 		    }

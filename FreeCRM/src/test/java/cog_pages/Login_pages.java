@@ -43,14 +43,14 @@ public class Login_pages extends TestBase_Cogmento {
 		
 		//Thread.sleep(5000);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		email.sendKeys("s7380519@gmail.com");
-		pass.sendKeys("Freecrm01");
+		email.sendKeys("pranita1502@gmail.com");
+		pass.sendKeys("DoraeMon@90");
 		login1.click();
 		//Added testNG code
 		Thread.sleep(5000);
 		String t=driver.getPageSource();
 		Thread.sleep(2000);
-		if(t.contains("Sofia Khanam"))
+		if(t.contains("Pranita Dorle"))
 		{
 			testlog=ext.createTest("Cogmento-Homepage");
 			testlog.log(Status.PASS,"Cogmento home page is displayed to search");

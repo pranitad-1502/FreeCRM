@@ -24,7 +24,6 @@ public class TestBase_Cogmento
 {
 	public static WebDriver driver; //for accessing package outside
 	public static Properties prop;
-	
 	public static ExtentHtmlReporter htmlreport;
 	public static ExtentReports ext;
 	public static ExtentTest testlog;
@@ -52,8 +51,7 @@ public class TestBase_Cogmento
 		 htmlreport.config().setReportName("FreeCRM Functional Testing");
 		 htmlreport.config().setTestViewChartLocation(ChartLocation.TOP);
 		 htmlreport.config().setTheme(Theme.STANDARD);	
-		   
-		   
+		 	   
 		String browser=prop.getProperty("browser");
 		if(browser.matches("firefox"))
 		{
